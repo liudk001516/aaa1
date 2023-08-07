@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加员工信息</title>
+  <style>
+    .form-table {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+    }
+
+    .form-table td, .form-table th {
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+    }
+
+    .form-table input[type="text"],
+    .form-table input[type="number"],
+    .form-table input[type="date"] {
+      width: 100%;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 5px 10px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+    }
+
+    button:hover {
+      background: #0062cc;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<form action="/JsonDemo/emp?method=addEmp" method="post" >
+  <table align="center" class="form-table">
+    <!--<tr>
+      <td>员工编号:</td>
+      <td><input type="text" name="empId"/></td>
+    </tr>-->
+    <tr>
+      <td>姓名:</td>
+      <td><input type="text" name="name"/></td>
+    </tr>
+    <tr>
+      <td>薪资:</td>
+      <td><input type="text" name="salary"/></td>
+    </tr>
+    <tr>
+      <td>入职日期:</td>
+      <td><input type="date" name="hireDate"/></td>
+    </tr>
+    <tr>
+      <td>所属部门编号:</td>
+      <td><input type="text" name="departmentId"/></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <button type="submit">提交</button>
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
